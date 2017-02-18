@@ -1,0 +1,80 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TestSystem - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPB66C.tmp" with contents
+[
+/nologo /stack:0xf4240 /subsystem:windows /incremental:yes /pdb:"Debug/TestSystem.pdb" /debug /machine:I386 /out:"Debug/TestSystem.exe" /pdbtype:sept 
+".\Debug\_Stu.obj"
+".\Debug\_Stu_mark.obj"
+".\Debug\_Stu_test1.obj"
+".\Debug\_Stu_test2.obj"
+".\Debug\_Tea.obj"
+".\Debug\_Tea_bank.obj"
+".\Debug\_Tea_bank_add_cho.obj"
+".\Debug\_Tea_bank_add_jud.obj"
+".\Debug\_Tea_create.obj"
+".\Debug\_Tea_create_option.obj"
+".\Debug\_Tea_mark.obj"
+".\Debug\ADO.obj"
+".\Debug\column.obj"
+".\Debug\columns.obj"
+".\Debug\dataformatdisp.obj"
+".\Debug\datagrid.obj"
+".\Debug\font.obj"
+".\Debug\picture.obj"
+".\Debug\selbookmarks.obj"
+".\Debug\split.obj"
+".\Debug\splits.obj"
+".\Debug\StdAfx.obj"
+".\Debug\stddataformatsdisp.obj"
+".\Debug\TestSystem.obj"
+".\Debug\TestSystemDlg.obj"
+".\Debug\TestSystem.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPB66C.tmp"
+<h3>Output Window</h3>
+Linking...
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPB709.tmp" with contents
+[
+/nologo /o"Debug/TestSystem.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\_Stu.sbr"
+".\Debug\_Stu_mark.sbr"
+".\Debug\_Stu_test1.sbr"
+".\Debug\_Stu_test2.sbr"
+".\Debug\_Tea.sbr"
+".\Debug\_Tea_bank.sbr"
+".\Debug\_Tea_bank_add_cho.sbr"
+".\Debug\_Tea_bank_add_jud.sbr"
+".\Debug\_Tea_create.sbr"
+".\Debug\_Tea_create_option.sbr"
+".\Debug\_Tea_mark.sbr"
+".\Debug\ADO.sbr"
+".\Debug\column.sbr"
+".\Debug\columns.sbr"
+".\Debug\dataformatdisp.sbr"
+".\Debug\datagrid.sbr"
+".\Debug\font.sbr"
+".\Debug\picture.sbr"
+".\Debug\selbookmarks.sbr"
+".\Debug\split.sbr"
+".\Debug\splits.sbr"
+".\Debug\stddataformatsdisp.sbr"
+".\Debug\TestSystem.sbr"
+".\Debug\TestSystemDlg.sbr"]
+Creating command line "bscmake.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPB709.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+TestSystem.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
