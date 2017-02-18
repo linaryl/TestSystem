@@ -1,0 +1,580 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TestSystem.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_About DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 TestSystem"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TestSystem 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2016",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_TESTSYSTEM_DIALOG DIALOGEX 0, 0, 198, 153
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TestSystem"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "系统登录",IDC_STATIC,79,26,87,23
+    LTEXT           "账户：",IDC_STATIC,34,75,28,15
+    LTEXT           "密码：",IDC_STATIC,34,98,26,17
+    EDITTEXT        IDC_EDIT1,66,74,97,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,66,96,97,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "登录",IDC_BUTTON1,61,128,36,15
+    PUSHBUTTON      "退出",IDC_BUTTON2,104,128,35,15
+    LTEXT           "身份：",IDC_STATIC,34,52,28,15
+    COMBOBOX        IDC_COMBO2,66,51,96,61,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_Stu DIALOG DISCARDABLE  0, 0, 355, 163
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "_Stu"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "考生信息",IDC_STATIC,7,7,341,30
+    GROUPBOX        "考试信息",IDC_STATIC,7,44,341,74
+    PUSHBUTTON      "提交试卷",IDC_BUTTON1,234,127,49,20
+    PUSHBUTTON      "开始答题",IDC_BUTTON2,181,127,49,20
+    LTEXT           "学号：",IDC_STATIC1,21,20,44,12
+    LTEXT           "姓名：",IDC_STATIC2,84,20,32,12
+    LTEXT           "班级：",IDC_STATIC3,140,20,65,12
+    LTEXT           "学院：",IDC_STATIC4,210,20,86,12
+    PUSHBUTTON      "选择题",IDC_BUTTON7,25,63,69,24
+    PUSHBUTTON      "判断题",IDC_BUTTON8,108,62,65,26
+    LTEXT           "进度：",IDC_STATIC,29,95,38,15
+    LTEXT           "0/30",IDC_Stu_static1,72,95,38,15
+    LTEXT           "进度：",IDC_STATIC,111,95,38,15
+    LTEXT           "0/40",IDC_Stu_static2,154,95,38,15
+    LTEXT           "成绩：",IDC_STATIC5,298,20,34,10
+    LTEXT           "倒计时：",IDC_STATIC,20,133,34,15
+    PUSHBUTTON      "退出",IDC_BUTTON3,288,127,49,20
+    LTEXT           "Static",IDC_STATIC6,54,133,52,11
+END
+
+IDD_Tea DIALOG DISCARDABLE  0, 0, 260, 139
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "_Tea"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "教工信息",IDC_STATIC,8,7,244,30
+    LTEXT           "教工号：",IDC_STATIC1,18,22,74,12
+    LTEXT           "姓名：",IDC_STATIC2,103,22,62,12
+    GROUPBOX        "功能选项",IDC_STATIC,7,43,246,58
+    PUSHBUTTON      "试卷管理",IDC_BUTTON1,20,61,58,21
+    PUSHBUTTON      "题库管理",IDC_BUTTON2,90,60,58,21
+    PUSHBUTTON      "成绩管理",IDC_BUTTON3,162,60,58,21
+    PUSHBUTTON      "退出",IDC_BUTTON4,191,110,53,18
+    LTEXT           "权限：",IDC_STATIC3,185,22,42,10
+END
+
+IDD_Stu_test1 DIALOG DISCARDABLE  0, 0, 283, 214
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "_test1"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "上一题",IDC_BUTTON1,117,178,48,22
+    PUSHBUTTON      "下一题",IDC_BUTTON2,169,178,48,22
+    PUSHBUTTON      "返回",IDC_BUTTON3,221,178,48,22
+    GROUPBOX        "题目",IDC_STATIC,7,7,269,164
+    EDITTEXT        IDC_EDIT1,17,23,246,58,ES_AUTOHSCROLL
+    CONTROL         "A.",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,18,100,21,18
+    CONTROL         "B.",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,18,116,22,18
+    CONTROL         "C.",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,18,132,21,18
+    CONTROL         "D.",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,18,149,23,18
+    LTEXT           "0/30",IDC_STATIC0,221,87,41,12
+    LTEXT           "Static",IDC_STATIC1,41,105,221,12
+    LTEXT           "Static",IDC_STATIC2,41,120,221,12
+    LTEXT           "Static",IDC_STATIC3,41,137,221,12
+    LTEXT           "Static",IDC_STATIC4,41,154,221,12
+END
+
+IDD_Stu_test2 DIALOG DISCARDABLE  0, 0, 283, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "_test2"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "上一题",IDC_BUTTON1,117,138,48,22
+    PUSHBUTTON      "下一题",IDC_BUTTON2,169,138,48,22
+    PUSHBUTTON      "返回",IDC_BUTTON3,221,138,48,22
+    GROUPBOX        "题目",IDC_STATIC,7,2,269,129
+    EDITTEXT        IDC_EDIT1,17,16,246,53,ES_AUTOHSCROLL
+    CONTROL         "正确",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,18,89,246,
+                    18
+    CONTROL         "错误",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,18,105,246,
+                    18
+    LTEXT           "0/40",IDC_STATIC00,223,74,41,15
+END
+
+IDD_Stu_mark DIALOG DISCARDABLE  0, 0, 138, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "_mark"
+FONT 10, "System"
+BEGIN
+    LTEXT           "学号：",IDC_STATIC1,17,15,114,11
+    LTEXT           "姓名：",IDC_STATIC2,17,34,114,12
+    LTEXT           "班级：",IDC_STATIC3,17,53,114,15
+    LTEXT           "学院：",IDC_STATIC4,17,73,114,13
+    LTEXT           "成绩：",IDC_STATIC5,17,94,114,13
+    PUSHBUTTON      "确定",IDC_BUTTON1,47,116,43,15
+END
+
+IDD_Tea_mark DIALOG DISCARDABLE  0, 0, 377, 294
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "_mark"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "筛选",IDC_STATIC,7,3,363,38
+    LTEXT           "学院：",IDC_STATIC,18,16,25,17
+    LTEXT           "班级：",IDC_STATIC,161,16,26,17
+    LTEXT           "学号：",IDC_STATIC,18,58,26,17
+    PUSHBUTTON      "筛选",IDC_BUTTON1,309,14,53,17
+    LTEXT           "姓名：",IDC_STATIC,161,58,24,17
+    CONTROL         "",IDC_DATAGRID1,"{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",
+                    WS_TABSTOP,7,85,363,182
+    PUSHBUTTON      "查询",IDC_BUTTON2,310,54,53,17
+    COMBOBOX        IDC_COMBO2,47,16,94,99,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,191,16,105,95,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,47,58,94,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,192,58,103,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "返回",IDC_BUTTON3,310,270,55,18
+    GROUPBOX        "查询",IDC_STATIC,7,42,363,38
+END
+
+IDD_Tea_bank DIALOG DISCARDABLE  0, 0, 392, 292
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "_bank"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,8,378,50
+    GROUPBOX        "题型",IDC_STATIC,14,15,158,37
+    CONTROL         "选择题",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,41,29,49,
+                    13
+    CONTROL         "判断题",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,103,29,
+                    49,13
+    EDITTEXT        IDC_EDIT1,240,27,80,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "检索",IDC_BUTTON1,333,27,39,14
+    PUSHBUTTON      "返回",IDC_BUTTON2,316,266,42,19
+    CONTROL         "",IDC_DATAGRID2,"{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",
+                    WS_TABSTOP,7,63,378,197
+    PUSHBUTTON      "新增题目",IDC_BUTTON3,218,266,42,19
+    PUSHBUTTON      "删除题目",IDC_BUTTON4,262,266,42,19
+    LTEXT           "题目编号：",IDC_STATIC,194,30,40,16
+END
+
+IDD_Tea_create DIALOG DISCARDABLE  0, 0, 353, 243
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "_creat"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "生成试卷",IDC_BUTTON1,210,33,49,23
+    PUSHBUTTON      "返回",IDC_BUTTON2,274,64,49,23
+    GROUPBOX        "",IDC_STATIC,7,7,339,98
+    EDITTEXT        IDC_EDIT1,7,108,339,128,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+    PUSHBUTTON      "导出试卷",IDC_BUTTON3,274,32,49,23
+    GROUPBOX        "浏览",IDC_STATIC,15,17,164,80
+    GROUPBOX        "生成",IDC_STATIC,188,17,149,79
+    PUSHBUTTON      "A卷",IDC_BUTTON4,54,33,48,21
+    PUSHBUTTON      "B卷",IDC_BUTTON5,115,33,48,21
+    PUSHBUTTON      "A卷",IDC_BUTTON6,54,62,48,21
+    PUSHBUTTON      "B卷",IDC_BUTTON7,114,62,48,21
+    PUSHBUTTON      "打印试卷",IDC_BUTTON8,210,64,49,23
+    LTEXT           "试卷：",IDC_STATIC,22,38,29,15
+    LTEXT           "答案：",IDC_STATIC,22,67,24,15
+END
+
+IDD_Tea_bank_add_cho DIALOG DISCARDABLE  0, 0, 232, 206
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "确定",IDC_BUTTON1,76,174,42,13
+    PUSHBUTTON      "取消",IDC_BUTTON2,125,174,42,13
+    LTEXT           "题目：",IDC_STATIC1,22,18,24,10
+    LTEXT           "A：",IDC_STATIC2,32,51,14,14
+    LTEXT           "D：",IDC_STATIC5,31,116,15,10
+    LTEXT           "B：",IDC_STATIC3,31,72,15,12
+    LTEXT           "答案：",IDC_STATIC6,20,138,27,11
+    LTEXT           "C：",IDC_STATIC4,31,94,13,13
+    EDITTEXT        IDC_EDIT1,49,17,154,26,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,49,50,153,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,49,70,153,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,49,90,153,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,49,113,153,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,49,136,29,16,ES_AUTOHSCROLL
+END
+
+IDD_Tea_create_option DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "编号",IDC_STATIC,17,14,61,67
+    LTEXT           "考试时间（分）：",IDC_STATIC,99,20,73,9
+    EDITTEXT        IDC_EDIT1,99,35,70,20,ES_AUTOHSCROLL
+    PUSHBUTTON      "生成",IDC_BUTTON1,102,62,64,15
+    CONTROL         "A卷",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,30,32,39,13
+    CONTROL         "B卷",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,30,54,39,13
+END
+
+IDD_Tea_bank_add_jud DIALOG DISCARDABLE  0, 0, 218, 118
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "确定",IDC_BUTTON1,69,88,42,13
+    PUSHBUTTON      "取消",IDC_BUTTON2,118,88,42,13
+    LTEXT           "题目：",IDC_STATIC1,17,19,24,10
+    LTEXT           "答案：",IDC_STATIC6,16,62,27,11
+    EDITTEXT        IDC_EDIT1,45,18,154,26,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,45,57,29,16,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TestSystem Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TestSystem\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2016\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TestSystem.EXE\0"
+            VALUE "ProductName", "TestSystem 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_About, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TESTSYSTEM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 191
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_Stu, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_Tea, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_Stu_test1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_Stu_test2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_Stu_mark, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 131
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_Tea_mark, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 287
+    END
+
+    IDD_Tea_bank, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 385
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 285
+    END
+
+    IDD_Tea_create, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 346
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 236
+    END
+
+    IDD_Tea_bank_add_cho, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_Tea_create_option, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_Tea_bank_add_jud, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_Tea_mark DLGINIT
+BEGIN
+    IDC_DATAGRID1, 0x37a, 502, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x3c07, 0x0000, 0x1e19, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0x0005, 0x8000, 0x0008, 0x8000, 0x0000, 0x3f80, 0x0000, 0x4170, 0x0000, 
+0x0000, 0x0101, 0x0002, 0x0001, 0x0101, 0x0101, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x02bc, 0x7700, 0x0001, 0x5306, 0x7379, 0x6574, 0x036d, 0xe352, 
+0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0xbc00, 
+0x0002, 0x0177, 0x0600, 0x7953, 0x7473, 0x6d65, 0x0000, 0x0000, 0x0012, 
+0x0000, 0x0044, 0x0061, 0x0074, 0x0061, 0x0047, 0x0072, 0x0069, 0x0064, 
+0x0031, 0x0006, 0x0000, 0x0004, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 
+0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 
+0x900b, 0x11d0, 0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 
+0x0006, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0054, 0x0065, 0x0073, 0x0074, 0x0053, 0x0079, 0x0804, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 
+0x900b, 0x11d0, 0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 
+0x0006, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0xffff, 0xffff, 0xf8f7, 0xfffc, 0x6c6c, 0xff8a, 0x0804, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x41f8, 0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x41f8, 
+    0
+END
+
+IDD_Tea_bank DLGINIT
+BEGIN
+    IDC_DATAGRID2, 0x37a, 502, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x3e82, 0x0000, 0x2094, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0x0005, 0x8000, 0x0008, 0x8000, 0x0000, 0x3f80, 0x0000, 0x4170, 0x0000, 
+0x0000, 0x0101, 0x0002, 0x0001, 0x0101, 0x0101, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x02bc, 0x7700, 0x0001, 0x5306, 0x7379, 0x6574, 0x036d, 0xe352, 
+0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0xbc00, 
+0x0002, 0x0177, 0x0600, 0x7953, 0x7473, 0x6d65, 0x0000, 0x0000, 0x0012, 
+0x0000, 0x0044, 0x0061, 0x0074, 0x0061, 0x0047, 0x0072, 0x0069, 0x0064, 
+0x0032, 0x0006, 0x0000, 0x0004, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 
+0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 
+0x900b, 0x11d0, 0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 
+0x0006, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0054, 0x0065, 0x0073, 0x0074, 0x0053, 0x0079, 0x0804, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 
+0x900b, 0x11d0, 0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 
+0x0006, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0804, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x41f8, 0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x41f8, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TestS.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 TestSystem(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\TestSystem.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
